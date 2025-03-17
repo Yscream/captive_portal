@@ -1,6 +1,6 @@
 # Setting Up a Wi-Fi Hotspot with Captive Portal on Raspberry Pi
 
-This guide will walk you through setting up a Wi-Fi hotspot with a captive portal on a Raspberry Pi. The captive portal will redirect all HTTP traffic to an informational page (splash.html) regardless of internet availability. We will use hostapd for the access point, dnsmasq for DHCP/DNS, nginx for the web server, and iptables for traffic management.
+This guide will walk you through setting up a Wi-Fi hotspot with a captive portal on a Raspberry Pi. The captive portal will redirect all HTTP traffic to an informational page (index.html) regardless of internet availability. We will use hostapd for the access point, dnsmasq for DHCP/DNS, nginx for the web server, and iptables for traffic management.
 
 ## Prerequisites
 - Raspberry Pi with Raspberry Pi OS installed.
@@ -146,7 +146,7 @@ sudo chattr -i /etc/resolv.conf
 
 ## Step 7: Configure nginx for Captive Portal
 
-Create the splash page:
+Create the page:
 
 ```bash
 sudo mkdir -p /var/www/html
